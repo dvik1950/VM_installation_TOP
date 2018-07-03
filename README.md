@@ -1,7 +1,5 @@
 # 1.Introduction
 
-## 1.1 What is a VM
-
 If you want to use Ubuntu (or any other version of Linux) as the operating system you code on, but you don't feel like permanently changing your OS or switching back and forth between two different operating systems installed on your PC, then using a VM is probably the best option you have. VM is a shortcut for 'Virtual machine' which is a widely used program that [emulates](https://en.wikipedia.org/wiki/Emulator) a computer system. In other words, a VM allows you to run an operating system of your choice just like any other computer program. Unfortunately, such convenience comes at a price. Running a program that contains an operating system can be very heavy on your processor and RAM memory. More details about the required and recommended specs are listed later on. For now, lets look at the pros and cons of running a Virtual machine from the perspective of an average developer:
 
 Pros:
@@ -11,26 +9,22 @@ Pros:
 *No commitment: You can uninstall the VM program or delete any of the operating systems you have installed on your VM and resume using your computer as if nothing happened. This is great if you want to get a taste of a specific OS without removing your current OS. A lot of people started out with Linux on a VM and later on permanently replaced their Windows with a Linux operating system (I didn't regret it, neither will you!).
 
 Cons:
-*Ram and processor consuming
-*learning curve/inconvinience
-*setting up your VM requires time
+*Requiers a 'stronger' computer: Having nested operating systems consumes more RAM and processing power than having a regular operating system it also requires some additional space on your hard disk to store the virtual system. 
+*Learning curve: Using a VM can be a bit intimidating at first, but it's not something an Odin student can't overcome.
 
-The VM boot process is normally much quicker than a physical piece of equipment; however, the process can still take seconds or minutes based on the OS and the physical hardware performance as well as the system load.
+# 2.Installation
+## 2.0 Requirements
 
-pros/cons
-slow on slow computers
-easy to install
-gives you a taste of Linux without committing
-These are examples, feel free to add/remove
-#Installation
-Step 1: Downloads
+Before commiting to the installation, make sure your computer meets the [requirements](https://www.virtualbox.org/wiki/End-user_documentation) to run a virtual machine.
+
+## 2.1 Downloads
 verify 64/32 bit windows
 enabling hyperV on 64bit
 download proper linux version
 for a powerful computer: ubuntu 18.04 LTS
 less powerful: xubunut 18.04 LTS
 download correct virturalbox version
-#Step2: Installations
+# 2.2 Installing Virtualbox
 Install Virturalbox
 install linux as a VM
 talk about specs and setting up more ram and processor, and HDD space (if the computer can handle it)
