@@ -1,6 +1,6 @@
 # 1.Introduction
 
-If you want to use Ubuntu (or any other version of Linux) as the operating system you code on, but you don't feel like permanently changing your OS or switching back and forth between two different operating systems installed on your PC, then using a VM is probably the best option you have. VM is a shortcut for 'Virtual machine' which is a widely used program that [emulates](https://en.wikipedia.org/wiki/Emulator) a computer system. In other words, a VM allows you to run an operating system of your choice just like any other computer program. Unfortunately, such convenience comes at a price. Running a program that contains an operating system can be very heavy on your processor and RAM memory. More details about the required and recommended specs are listed later on. For now, lets look at the pros and cons of running a Virtual machine from the perspective of an average developer:
+If you want to use Ubuntu (or any other version of Linux) as the operating system for your development related to TOP, but you don't feel like permanently changing your OS or switching back and forth between two different operating systems installed on your PC, then using a VM is probably the best option you have. VM is a shortcut for 'Virtual machine' which is a widely used program that [emulates](https://en.wikipedia.org/wiki/Emulator) a computer system. In other words, a VM allows you to run an operating system of your choice just like any other computer program. Unfortunately, such convenience comes at a price. Running a program that contains an operating system can be very heavy on your processor and RAM memory. More details about the required and recommended specs are listed later on. For now, lets look at the pros and cons of running a Virtual machine from the perspective of an average developer:
 
 ## Pros:
 *Snapshots: Probably the greatest advantage of running an OS virtually compared to running a regular OS on your computer are snapshots. They allow you to save the state of your virtual operating system at any point and go back to that point if needed. This is extremely useful if you're installing stuff you're not completely sure about, playing around with settings or you simply prefered how you OS looked two days ago. A rollback is just a click away and it can be a huge life saver.
@@ -24,11 +24,8 @@ You have read through the introduction part and you feel like a VM is your best 
 
 ### 2.1.1 Downloading Virtual Box
 
-Make sure to get the right version for your system.
-[64 bit](https://download.virtualbox.org/virtualbox/5.2.12/VirtualBox-5.2.12-122591-Win.exe) [32 bit]() 
 
-If you're not sure whether you're running a 64-bit or a 32-bit version of Windows, make sure to check it ( [here's how](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) before proceeding with the download.
-
+[Click here](https://download.virtualbox.org/virtualbox/5.2.12/VirtualBox-5.2.12-122591-Win.exe) to download VirtualBox (64 bit) for Windows.
 
 ### 2.1.2 Linux download
 
@@ -57,8 +54,9 @@ rules of thumb ( a link would be best)
 *All of the coding is done in the VM. 
 
 # 4. Possible issues
-This is a fairly new guide, no issues have been reported so far, at least not common ones. If you do run upon a problem 
-don't hestitate to ask for help on the [forums](https://forum.theodinproject.com/c/help) or in our [Gitter chat](https://gitter.im/TheOdinProject/theodinproject).
+If you can not choose anything else than a 32-bit operating system when setting up your VM look at [this](http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/#.WzzZYXYzZN0)
+
+If you do run upon a problem don't hestitate to ask for help on the [forums](https://forum.theodinproject.com/c/help) or in our [Gitter chat](https://gitter.im/TheOdinProject/theodinproject).
 
 
 Things to add/change: 
