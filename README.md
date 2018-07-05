@@ -71,15 +71,20 @@ which doesn't have any data on it and installing Ubuntu on it.
 
 You can find their official installation guide for Ubuntu [here](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0) in case you need it.
 
-### 2.2.3 Installing Guest additions and enabling them
+### 2.2.3 Installing Guest Additions and enabling them (Optional)
 
+ Your regular operating system (Windows in this case), the one that is booted directly by pressing that big button on your computer is called the **Host** and all other operating systems that are run inside your VM are **Guests**. To make working in your Guest OS easier, you need to install Guest Additions. They add a lot of functionality to the Guest OS like 'Drag n Drop' from one OS to the other, custom screen sizes for the Guest OS (including fullscreen), Sharder folders and so on.
 
+To install guest additions first download the .iso file from [here](https://download.virtualbox.org/virtualbox/). https://download.virtualbox.org/virtualbox/. Find your version, click on it and then look for a .iso file named "VBoxGuestAdditions_x.x.x" (x.x.x being your current version). If you're not sure what version of VirtualBox you're using go to the Help tab and click on 'About VirtualBox'. It's important to mention that this download is done on the Host OS. You're downloading this .iso file to Windows.
+
+Now Start Ubuntu unless it's already open and look for a CD icon in the bottom-right part of the screen. Click on the CD icon and click on 'Choose disk image' and then find your recently downloaded VBoxGuestAdditions.iso file and load it. The installation should start automatically, if it doesn't look for the VBox_Gas file on your desktop and open it. After the installation restart your Guest OS.
 
 # 3.Understanding how VM works
 
   It's important to note a few things about coding in a virtual environment:
   
-*All installations are done in the VM. Your regular operating system (Windows in this case), the one that is booted directly by pressing that big button on your computer is called the **Host** and all other operating systems that are run inside your VM are **Guests**. Now that you have everything set up it is important to know that everything you install regarding coding you install on the Guest OS (Ubuntu in this case) including Ruby,Rails,Text editors(more details about these things later on) and everything else you will need during this curriculum. This means that during the installation project, you consider yourself a Linux user, not a Windows user.
+*All installations are done in the VM. Now that you have everything set up it is important to mention that everything you install regarding coding you install on the Guest OS (Ubuntu in this case) including Ruby,Rails,Text editors and everything else you will need during this curriculum. This means that during the installation project, you consider yourself a Linux user, not a Windows user.
+
 *All of the development related to TOP is done in the VM. 
 
 # 4. Possible issues
@@ -87,7 +92,3 @@ If you can not choose anything else than a 32-bit operating system when setting 
 
 If experience any issues during the installation don't hestitate to ask for help on the [forums](https://forum.theodinproject.com/c/help) or in our [Gitter chat](https://gitter.im/TheOdinProject/theodinproject).
 
-
-Things to add/change: 
-
-- Someone should look at the installation process and see if everything recommended is right, 
