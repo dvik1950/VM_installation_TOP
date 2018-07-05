@@ -4,12 +4,16 @@ If you want to use Ubuntu (or any other version of Linux) as the operating syste
 
 ## Pros:
 *Snapshots: Probably the greatest advantage of running an OS virtually compared to running a regular OS on your computer are snapshots. They allow you to save the state of your virtual operating system at any point and go back to that point if needed. This is extremely useful if you're installing stuff you're not completely sure about, playing around with settings or you simply prefered how you OS looked two days ago. A rollback is just a click away and it can be a huge life saver.
+
 *Convenience: You can have a virtual machine up and running in a very short period of time. There's also the posibility of using a pre-configured operating system, with everything already installed on it. This can be very useful when installing a certain OS with certain applications/programs on multiple computers.
+
 *Multiple OS' a button away: You can use multiple operating systems with your VM program with different configurations for different needs.
+
 *No commitment: You can uninstall the VM program or delete any of the operating systems you have installed on your VM and resume using your computer as if nothing happened. This is great if you want to get a taste of a specific OS without removing your current OS. A lot of people started out with Linux on a VM and later on permanently replaced their Windows with a Linux operating system (I didn't regret it, neither will you!).
 
 ## Cons:
-*Requiers a 'stronger' computer: Having nested operating systems consumes more RAM and processing power than having a regular operating system it also requires some additional space on your hard disk to store the virtual system. 
+*Requiers a 'stronger' computer: Having nested operating systems consumes more RAM and processing power than having a regular operating system it also requires some additional space on your hard disk to store the virtual system.
+
 *Learning curve: Using a VM can be a bit intimidating at first, but it's not something an Odin student can't overcome.
 
 # 2.Installation
@@ -29,7 +33,7 @@ You have read through the introduction part and you feel like a VM is your best 
 
 ### 2.1.2 Linux download
 
-There are various versions of Linux out there, Ubuntu being undoubtedly the most popular one. Our recommendation is to [download](http://releases.ubuntu.com/18.04/ubuntu-18.04-desktop-amd64.iso) and use Ubuntu 18.04 LTS, if you plan on running your VM on a less powerful computer (A rough estimation would be < 4gb ram, < 4 processor cores, for more details check out their [official recommendations](https://help.ubuntu.com/community/Installation/SystemRequirements)), we recommend [downloading](https://xubuntu.org/download) and using Xubuntu 18.04 LTS.
+There are various versions of Linux out there, Ubuntu being undoubtedly the most popular one. Our recommendation is to [download](http://releases.ubuntu.com/18.04/ubuntu-18.04-desktop-amd64.iso) and use Ubuntu 18.04 LTS, if you plan on running your VM on a less powerful computer (A rough estimation would be < 4gb ram, < 4 processor cores, for more details check out their [official requirements](https://help.ubuntu.com/community/Installation/SystemRequirements)), we recommend [downloading](https://xubuntu.org/download) and using Xubuntu 18.04 LTS.
 
 ## 2.2 Installing Virtualbox and setting up Ubuntu
 
@@ -38,28 +42,52 @@ There are various versions of Linux out there, Ubuntu being undoubtedly the most
 The installation of VirtualBox is a very straight forward process. It doesn't require any technical knowledge and is the same as installing any other computer program on your Windows computer. Double-clicking the downloaded file is sufficient to start the installation process. Any additional options prompted by the installation are left for the user to decide (such as creating a desktop icon and so on). After the installation is finished (the progress bar might get stuck for a few minutes, just wait for it to finish) search for your newly installed Virtual Box program and run it.
 
 ### 2.2.2 Setting up Ubuntu
+Now that you have Virtual Box installed, double click the icon and you should see something like this:
 
+![vbimage](https://i.imgur.com/q9MauDU.png)
 
+Click on the 'New' button to create a virtual operating system. Find your operating system in the dropdown menu (Linux/Ubuntu) and name it as you wish. Continue by pressing next and choose the following options in the next steps:
 
-talk about specs and setting up more ram and processor, and HDD space (if the computer can handle it)
-you might be able to find a calculator somewhere
-rules of thumb ( a link would be best)
+- Memory size - Should be about half of your computers maximum. For example, if you have 16gb of RAM memory, allocate 8gb to your virtual operating system.
+
+- Hard disk - Create a virtual hard disk
+
+- Hard disk file type - Choose the VDI (VirtualBox Disk Image) option
+
+- Storage on physical hard disk - Dynamically allocated
+
+- File location and size - We recommend at least 20GB for the virtual hard disk
+
+After completing the last step, click the Create button. Your newly created virtual OS should be in the menu now. Right click on it and go to Settings. Go to the Storage section and add the Ubuntu iso file you downloaded earlier:
+
+![isoimg](https://i.imgur.com/lJvWXoZ.png)
+
+After that, you can go to the System tab and change the amount of hardware the virtual operating system will be using. Generally 50% of RAM and processors should be allocated to the virtual OS, but you can always change that and set them as it fits best for you. 
+
+Now you can start Ubuntu by right clicking on the icon in the menu and selecting Start then Normal Start.
+
+The next thing to do is Install Ubuntu. The process is very simple and most of the default options can be left like that including the Installation type which should be 'Erase disk and install Ubuntu'. The setup will ask you to confirm this step because it thinks you're formatting your entire disk,but actually you're only formating the newly created virtual hard disk
+which doesn't have any data on it and installing Ubuntu on it.
+
+You can find their official installation guide for Ubuntu [here](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0) in case you need it.
+
 ### 2.2.3 Installing Guest additions and enabling them
+
+
 
 # 3.Understanding how VM works
 
   It's important to note a few things about coding in a virtual environment:
   
 *All installations are done in the VM. Your regular operating system (Windows in this case), the one that is booted directly by pressing that big button on your computer is called the **Host** and all other operating systems that are run inside your VM are **Guests**. Now that you have everything set up it is important to know that everything you install regarding coding you install on the Guest OS (Ubuntu in this case) including Ruby,Rails,Text editors(more details about these things later on) and everything else you will need during this curriculum. This means that during the installation project, you consider yourself a Linux user, not a Windows user.
-*All of the coding is done in the VM. 
+*All of the development related to TOP is done in the VM. 
 
 # 4. Possible issues
 If you can not choose anything else than a 32-bit operating system when setting up your VM look at [this](http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/#.WzzZYXYzZN0)
 
-If you do run upon a problem don't hestitate to ask for help on the [forums](https://forum.theodinproject.com/c/help) or in our [Gitter chat](https://gitter.im/TheOdinProject/theodinproject).
+If experience any issues during the installation don't hestitate to ask for help on the [forums](https://forum.theodinproject.com/c/help) or in our [Gitter chat](https://gitter.im/TheOdinProject/theodinproject).
 
 
 Things to add/change: 
--Link for VirtualBox 32-bit
--Should one download Xubuntu 32-bit or 64-bit (Xubuntu is recommended in absence of a powerful pc to run Ubuntu, so my question is which is less hardware consuming and at which cost?)
--I removed Hyper-V from the guide, most people don't have access to it and I think it could just complicate things. I could use more opinions on this matter
+
+- Someone should look at the installation process and see if everything recommended is right, 
